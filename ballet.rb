@@ -9,20 +9,16 @@ class Dancer
     @card = []
   end
 
-  def get_name
-    @name
-  end 
-
-  def get_age(age)
-      @age
-  end
-
   def pirouette
-    puts "*twirls*"
+    p "*twirls*"
   end 
 
   def bow
-    puts "*bows*"
+    p "*bows*"
+  end
+
+  def jump
+    p "*jump*"
   end
 
   def queue_dance_with(partner)
@@ -31,9 +27,7 @@ class Dancer
 
   def begin_next_dance
       dance_partner = card.shift
-      p "Now dancing with #{dance_partner}"
+      p "Now dancing with #{dance_partner}."
   end
 
 end
-
-p get_name
