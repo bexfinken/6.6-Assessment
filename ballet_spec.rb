@@ -1,3 +1,5 @@
+require_relative "ballet.rb" 
+
 describe Dancer do
   let(:dancer) { Dancer.new("Misty Copeland", 33) }
 
